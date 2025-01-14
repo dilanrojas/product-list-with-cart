@@ -98,6 +98,10 @@
   color: var(--rose-500)
 }
 
+.cart-empty p {
+  font-weight: 500;
+}
+
 .order-confirmed-modal-wrapper {
   position: fixed;
   display: flex;
