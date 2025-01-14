@@ -39,7 +39,7 @@
 
   border-radius: 40px;
   border: 1px solid var(--rose-500);
-  background-color: var(--rose-50);
+  background-color: var(--white);
   color: var(--red);
   transition: border .1s ease, color .1s ease, background-color .1s ease;
 }
