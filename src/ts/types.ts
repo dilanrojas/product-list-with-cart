@@ -7,8 +7,7 @@ export type CartItems = {
 
 export type Dessert = {
   image: any
-  name: st
-  ring,
+  name: string,
   price: number,
 }
 
