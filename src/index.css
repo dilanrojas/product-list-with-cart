@@ -64,7 +64,7 @@ button {
 /* Utility classes */
 .wrapper {
   --width: 1210px;
-  --padding: 1rem;
+  --padding: 2rem;
 
   width: min(var(--width), 100% - var(--padding));
   margin-inline: auto
