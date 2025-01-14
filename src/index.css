@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+:root {
+  --ff-html: "Red Hat Text", serif;
+
+  --red: hsl(14, 86%, 42%);
+  --green: hsl(159, 69%, 38%);
+  --rose-50: hsl(20, 50%, 98%);
+  --rose-100: hsl(13, 31%, 94%);
+  --rose-300: hsl(14, 25%, 72%);
+  --rose-400: hsl(7, 20%, 60%);
+  --rose-500: hsl(12, 20%, 44%);
+  --rose-900: hsl(14, 65%, 9%);
+  --white: hsl(0, 0%, 100%);
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: var(--ff-html);
+  color: var(--rose-900);
+  background-color: var(--rose-50);
+  scrollbar-gutter: stable;
+}
+
+html:has(.no-scroll) {
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after { box-sizing: border-box }
+
+h1, h2, h3, h4, h5, h6 { line-height: 1 }
+
+img, svg, picture { display: block }
+
+ul, ol { list-style: none }
+
+svg { fill: currentColor }
+
+a {
+  text-decoration: none;
+  color: currentColor
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Contents */
+#root {
+  padding-block: 6.7rem
+}
+
+/* Utility classes */
+.wrapper {
+  --width: 1210px;
+  --padding: 1rem;
+
+  width: min(var(--width), 100% - var(--padding));
+  margin-inline: auto
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, .25rem)
+}

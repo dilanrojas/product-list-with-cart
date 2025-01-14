@@ -1,0 +1,25 @@
+.primary-header {
+  margin-bottom: 2rem;
+  font-size: 1.15rem;
+}
+
+.columns-layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 2rem
+}
+
+.desserts-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  );
+  gap: 1.6rem
+}
+
+@media (width <= 768px) {
+  .columns-layout {
+    grid-template-columns: 1fr;
+  }
+}

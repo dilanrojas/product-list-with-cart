@@ -1,0 +1,41 @@
+.confirmed-item-card {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1rem;
+  border-bottom: 1px solid var(--rose-100);
+  padding-bottom: 1rem
+}
+
+.confirmed-item-card span {
+  display: inline;
+}
+
+.confirmed-item-card img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.confirmed-item-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.confirmed-item-card-pricing {
+  display: flex;
+
+  & span:not(:first-child) { color: var(--rose-500 )}
+
+  & > span:first-child {
+    margin-right: 1rem;
+    color: var(--red);
+    font-weight: 700;
+  }
+
+  & > span:nth-child(3) {
+    margin-left: .8rem;
+    font-weight: 600;
+  }
+}
